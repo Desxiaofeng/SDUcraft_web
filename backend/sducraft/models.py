@@ -297,6 +297,7 @@ class Download(ImgBase):
     version=models.CharField(max_length=MIDLEN,blank=True,null=True)
     intro=models.TextField(blank=True,null=True)
     rank=models.IntegerField(default=0)
+    author=models.CharField(max_length=MIDLEN,blank=True,null=True)
     
     def __str__(self) -> str:
         if(self.name==None):

@@ -73,7 +73,7 @@ class FileSetForDownloadInline(nested_admin.NestedStackedInline):
 
 class DownloadAdmin(nested_admin.NestedModelAdmin):
     readonly_fields=['modify_date',]
-    fields=['publish_date','modify_date','name','version','intro','img','rank']
+    fields=['publish_date','modify_date','name','version','intro','img','rank','author']
     inlines=[FileSetForDownloadInline]
 
 class IntroductionAdmin(admin.ModelAdmin):
