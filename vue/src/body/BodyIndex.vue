@@ -112,7 +112,7 @@ export default {
             window.location.href='http://in.sducraft.top:8100'
         },
         changeMargin(){
-            if(this.$route!='index'){
+            if(this.$route.name!='index'){
                 window.removeEventListener("scroll", ()=>requestAnimationFrame(this.changeMargin));
             }
             const container = document.getElementById('Height');
