@@ -8,6 +8,7 @@
                     <span>
                     发布时间：{{ download.publish_date }}<br>
                     版本：{{ download.version }}<br>
+                    作者：{{ download.author }}<br>
                     简介：<span v-html="download.intro"></span>
                     </span>
                 </div>
