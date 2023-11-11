@@ -4,7 +4,7 @@
       <el-timeline-item v-for="historynode in historynodes" :timestamp="historynode.date.slice(0,10)" placement="top" 
       :type="chooseType(historynode)" :hollow="this.historynodes[0]==historynode">
         <el-card>
-          <p>{{ historynode.content }}</p>
+          <p v-html="historynode.content"></p>
           <template v-for="img in imagesetforhistorynode">
             <el-image v-if="img.historynode==historynode.id" :src="img.img" lazy />
             <figcaption v-if="img.historynode==historynode.id" style="text-align: center;">{{ img.name }}</figcaption>
