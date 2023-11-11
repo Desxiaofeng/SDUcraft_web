@@ -86,10 +86,10 @@ export default {
         axios.get(this.$store.state.imagesetforserverAPI).then(response=>{
             this.imagesetforserver=response.data
         })
-        window.addEventListener("scroll", ()=>requestAnimationFrame(this.changeMargin));
+        window.addEventListener("scroll", this.changeMargin);
     },
     unmounted(){
-        window.removeEventListener("scroll", ()=>requestAnimationFrame(this.changeMargin));
+        window.removeEventListener("scroll", this.changeMargin);
     },
     computed:{
 
@@ -112,9 +112,6 @@ export default {
             window.location.href='http://in.sducraft.top:8100'
         },
         changeMargin(){
-            if(this.$route.name!='index'){
-                window.removeEventListener("scroll", ()=>requestAnimationFrame(this.changeMargin));
-            }
             const container = document.getElementById('Height');
             const scrollPosition = window.scrollY*0.5;
             const newHeight = Math.min(40 + scrollPosition, 330);
