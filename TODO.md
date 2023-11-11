@@ -1,0 +1,2 @@
+tofixbug: 直接删除某个proxyserver，其图片imagesetforproxyserver对应的文件不能正确删除，其包含的server的imagesetforserver对应也不能正确删除(不知原因)
+tofixbug: 在admin界面里面某个具体表单里，批量删除含有filefield的条目，条目中fieldfile对应的文件也不会删除（估计是批量删除不是走具体条目对象的delete方法）

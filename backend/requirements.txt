@@ -1,0 +1,7 @@
+Django==4.2.6
+django_nested_admin==4.0.2
+djangorestframework==3.14.0
+django-nested-admin
+django-cors-headers
+mistune
+beautifulsoup4
