@@ -1,7 +1,7 @@
 <template>
     <div class="mainLayout">
         <div v-for="download in downloads" class="container" :style="{boxShadow: `var(--el-box-shadow)`}">
-            <el-image class="container-p1" :src="download.img" fit="contain" />
+            <el-image class="container-p1" :src="download.img" fit="cover" />
             <div class="container-p2">
                 <div>
                     <h2 style="margin: 0;">{{ download.name }}</h2>
