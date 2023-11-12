@@ -194,6 +194,7 @@ export default{
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-wrap: wrap;
+    will-change: transform;
 }
 }
 </style>

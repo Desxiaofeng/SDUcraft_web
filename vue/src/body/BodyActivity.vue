@@ -153,6 +153,7 @@ export default{
     object-fit: cover;
     transform-origin: center center;
     transition: transform 0.3s ease, filter 0.3s ease;
+    will-change: transform;
 }
 .actImg:hover{
     transform: scale(1.1);
@@ -209,6 +210,7 @@ export default{
     object-fit: cover;
     transform-origin: center center;
     transition: transform 0.3s ease, filter 0.3s ease;
+    will-change: transform;
 }
 .actImg:hover{
     transform: scale(1.1);
