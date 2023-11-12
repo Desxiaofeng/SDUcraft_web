@@ -5,7 +5,7 @@
                 <h1 style="margin-bottom: 0.4em;">{{ activity.title }}</h1>
                 <div style="font-size: 0.85em;display: flex;flex-direction: column;justify-content: center;">
                     <span style="display: flex;justify-content: center;">于 <span style="font-weight: bold;">{{ activity.publish_date }}</span> 由 <span style="font-weight: bold;">{{ activity.author }}</span> 发布</span>
-                    <span style="display: flex;justify-content: center;align-items: center;"><el-icon><i-ep-Histogram /></el-icon>字数：{{ activity.wordCount/1000 }}&emsp;&emsp;<el-icon><i-ep-Reading /></el-icon>阅读：{{ activity.clicks }}</span>
+                    <span style="display: flex;justify-content: center;align-items: center;"><el-icon><i-ep-Histogram /></el-icon>字数：{{ activity.wordCount }}&emsp;&emsp;<el-icon><i-ep-Reading /></el-icon>阅读：{{ activity.clicks }}</span>
                 </div>
                 
             </div>
@@ -38,7 +38,7 @@
                 <h1 style="margin-bottom: 0.4em;">{{ activity.title }}</h1>
                 <div style="font-size: 0.85em;display: flex;flex-direction: column;justify-content: center;">
                     <span style="display: flex;justify-content: center;">于 <span style="font-weight: bold;">{{ activity.publish_date }}</span> 由 <span style="font-weight: bold;">{{ activity.author }}</span> 发布</span>
-                    <span style="display: flex;justify-content: center;align-items: center;"><el-icon><i-ep-Histogram /></el-icon>字数：{{ activity.wordCount/1000 }}&emsp;&emsp;<el-icon><i-ep-Reading /></el-icon>阅读：{{ activity.clicks }}</span>
+                    <span style="display: flex;justify-content: center;align-items: center;"><el-icon><i-ep-Histogram /></el-icon>字数：{{ activity.wordCount }}&emsp;&emsp;<el-icon><i-ep-Reading /></el-icon>阅读：{{ activity.clicks }}</span>
                 </div>
                 
             </div>
