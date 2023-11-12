@@ -173,7 +173,8 @@ class ZipFileBase(FileBase):
                                 pass
                         #删除完毕，开始部署
                         for file_name in file_list:
-                            if file_name.endswith('/'):
+                            # 修复mac可能导致的问题
+                            if file_name.endswith('/') or '__MACOSX' in file_name:
                                 continue
                             # 使用open()函数打开文件对象，然后读取其内容(从压缩文件中提取文件)
                             with zip_ref.open(file_name) as extracted_file:
