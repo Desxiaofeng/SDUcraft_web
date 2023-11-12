@@ -112,6 +112,9 @@ export default {
             window.location.href='http://in.sducraft.top:8100'
         },
         changeMargin(){
+            if(this.ismobile){
+                return
+            }
             const container = document.getElementById('Height');
             const scrollPosition = window.scrollY*0.5;
             const newHeight = Math.min(40 + scrollPosition, 330);
