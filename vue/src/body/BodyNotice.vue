@@ -114,7 +114,13 @@ export default{
             })
             if(isfind==0){
                 if(this.notices.length>0){
-                    this.showNow=this.notices[0]
+                    for (let i = 0; i < this.notices.length; i++) {
+                        let notice = this.notices[i];
+                        if (notice.valid !== 0) {
+                            this.showNow = notice;
+                            break; // 跳出整个循环
+                        }
+                    }
                     isTransHeader=false
                 }
             }
@@ -259,6 +265,7 @@ export default{
                 const validB = validOrder.indexOf(b.valid);
                 return validA - validB;
             });
+            //重新选择valid=3作为首个展示的notice
             if(this.notices.length>0){
                 if(this.notices[0].valid==3){
                     this.changeNotice(this.$route.query.id,true)
